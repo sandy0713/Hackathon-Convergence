@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="pay.css">
+</head>
+
+<body>
+    <h6 class="display-6 mt-0 pt-0">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/VNRVJIETLogo.png" width='80' height='80'>
+        CGRS - VNRVJIET </h1>
+    <div class="container">
+        <div class="card px-5">
+            <div class="card-header text-center">
+                <h1>Payments</h1>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Tuition Fee</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Transport Fee</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Examination Fee</label>
+              </div>
+
+            <div class="bg-light mx-5 my-3">
+                <button class="btn w-100 text-dark" data-bs-toggle="collapse" data-bs-target="#content1"><i
+                        class="fas fa-credit-card list"></i> Debit Card</button>
+                <div id="content1" class="collapse">
+                    <div class="contianer m-5">
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="eg. John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="eg. 1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="eg. September">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="eg. 2018">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="eg. 352">
+                                
+                            </div>
+                            &emsp; &emsp;
+                                <button type="button" class="btn btn-outline-primary w-50 mx-auto">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-light mx-5 my-3">
+                <button class="btn w-100 text-dark" data-bs-toggle="collapse" data-bs-target="#content2"><i
+                        class="fas fa-credit-card list"></i> Credit Card</button>
+                <div id="content2" class="collapse">
+                    <div class="contianer m-5">
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="eg. John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="eg. 1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="eg. September">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="eg. 2018">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="eg. 352">
+                            </div>
+                                <button type="button" class="btn btn-outline-primary w-25 mx-auto">Pay Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-light mx-5 my-3">
+                <button class="btn w-100 text-dark" data-bs-toggle="collapse" data-bs-target="#content3"><i
+                        class="fas fa-user-tag list"></i> UPI ID</button>
+                <div id="content3" class="collapse mx-auto">
+                    <label for="cname">Enter UPI ID</label>
+                        <input type="text" id="cname" name="cardname" placeholder="example@ybl">
+                        &emsp; &emsp;
+                                <button type="button" class="btn btn-outline-primary w-25 mx-auto">Pay Now</button>
+                </div>
+                
+            </div>
+            <div class="bg-light mx-5 my-3 text-center">
+                <h3 class="mt-3">Scan this QR</h3>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/330px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/1d1844e6fa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
